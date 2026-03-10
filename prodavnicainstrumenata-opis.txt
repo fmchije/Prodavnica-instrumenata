@@ -1,0 +1,27 @@
+Aplikacija "prodavnica instrumenata" omogucava korisniku da koristi bazu podataka u kojoj se nalaze 
+instrumenti razvrstani po grupama. Postoje u sustini dva dela aplikacije, u jednom se baza pregleda
+(ukljucena pretraga i sortiranje rezultata), a u drugom se bazom manipulise(ubacuju se novi proizvodi,
+izbacuju i menjaju vec postojeci).
+
+sortiranje1.php - pocetni fajl, nudi korisniku da odabere da li zeli da pregleda bazu (opcija "nasi proizvodi"),
+ili da je menja ("upravljanje bazom"). Odabirom opcije "nasi proizvodi" se uz pomoc AJAXa otvara novi podmeni bez ucitavanja
+nove stranice. U tom meniju korisik moze da odabere da li zeli da mu se izlistaju svi bubnjevi ili gitare ili svi proizvodi.
+Tu je i pocija pretraga, koja u koliko je korisnik izabere otvara(ili zatvara), takodje uz pomoc AJAX-a, formu za pretrazivanje na istoj
+strani, koja sadrzi polja: minimalna cena, maksimalna cena, grupa proizvoda, naziv proizvoda. Nakon unosa zeljenih podataka
+za prikaz odgovarajucih rezultata pritiska se dugme "trazi". Na stranici se nalaze i slike koje su ujedno i linkovi (3 slike se stalno menjaju
+nakon odredjenog broja sekundi-AJAX). Sve stranice sadrze te slike kao i Logo koji se nalazi na vrhu i prestavlja lin ka sortiranje1.php.
+
+sortiranje1a.php - prikazuje rezultate upita za prikaz proizvoda sa prethodne stranice sortiranje1.php. Korisik moze da sortira
+rezultate prema nazivu ili ceni, a dostupne su mu i sve funkcionalnosti fajla sortiranje.php
+
+update.php - prikazuje sve proizvode koji se trenutno nalaze u bazi, njihov naziv i cenu, i pored njih opcije za njihovu izmenu ili brisanje.
+Takodje sadrzi i linkove za ubacivanje novog proizvoda ili povratak na pocetnu stranu. U koliko je odabrana opcija izmena, pojavice se forma 
+za unos novog naziva i cene sa dugmetom kojim se unos potvrdjuje. Nakon toga se ispisuje poruka zavisno od toga da li je unos bio uspesan.
+Ukoliko se proizvod brise ispisace se odgovarajuca poruka a opcija "ubaci proizvod" vodi na stranicu insert1.php
+
+insert1.php - sadrzi formu za unos novog proizvoda (proizvoda i cene), i omogucava povratak na update.php. nakon ubacivanja ispisuje se 
+odgovarajuca poruka.
+
+prodavnicainstrumenata.css - opis dizajna cele aplikacije, koji je isti za najveci deo svih stranica.
+
+prodavnicainstrumenata.js - opis funkcija koje se izvrsavaju, gore pomenutih AJAX funkcionalnosti.
