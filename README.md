@@ -1,5 +1,6 @@
 # 🎸 Online Instrument Store (PHP & MySQL)
 
+![Instrument Shop Demo](./public/ProdavnicaInstrumenata.gif)
 ## 📋 Project Overview
 A full-stack e-commerce platform for musical instruments, featuring dynamic search filtering.
 
